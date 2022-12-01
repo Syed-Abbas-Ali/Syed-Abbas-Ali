@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>bill</title>
+</head>
+<body>
+    
+<form>
+    <div class="heading"><h1>Order Maker</h1></div>
+    <div class="detail">
+        <div class="cont">
+            <label>Name</label>
+            <input type="text" placeholder="Enter Your Full Name" id="name" required>
+            </div>
+    
+            <div class="cont">
+            <label>Email</label>
+            <input type="email" placeholder="Enter Your Email" id="email" required>
+            </div>
+    </div>
+    <div class="main-cont">
+        <div class="cont">
+        <label>Starter(Rs: 200)</label>
+        <input type="number" placeholder="quantity" value="0" id="start" min="0" required>
+        </div>
+
+        <div class="cont">
+        <label>indian(Rs: 400)</label>
+        <input type="number" placeholder="quantity"  value="0" id="ifood" min="0" required>
+        </div>
+
+        <div class="cont">
+        <label>Chinese(Rs: 450)</label>
+        <input type="number" placeholder="quantity"  value="0" id="cfood" min="0" required>
+        </div>
+
+        <div class="cont">
+        <label>Desert(Rs: 320)</label>
+        <input type="number" placeholder="quantity"  value="0" id="dsrt" min="0" required>
+        </div>
+    
+        <input type="submit" id="btn" value="ORDER"></input>
+    </div>
+
+    <div class="display">
+        <div class="dis"><h3>Name:-</h3><p id="dname"></p></div>
+        <div class="dis"><h3>Email:-</h3><p id="demail"></p></div>
+        <div class="dis"><h3>Rs:</h3><p id="amnt"></p></div>
+        <div class="dis"><h3>Gst: </h3><p id="gst"></p></div>
+        <div class="dis"><h3>Tip: </h3><p id="tip"></p></div>
+        <div class="dis"><h2>Total-Amount:</h2><h3 id="totl"></h3></div>
+    </div>
+</form>
+
+    <!-- <div class="bill">
+
+    </div> -->
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
